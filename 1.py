@@ -37,7 +37,7 @@ def main():
     fo.close()
     global num1
     localtime = time.asctime( time.localtime(time.time()) )
-    access_token=gettoken(refresh_token)
+    access_token = gettoken(refresh_token)
     headers={
     'Authorization':access_token,
     'Content-Type':'application/json'
